@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+<canvas style="position:fixed;width: 480px; height: 640px;z-index: 1;" type="2d" id="myCanvas"></canvas>
+<camera style="position:fixed;width: 480px; height: 640px;z-index: 0;" mode = "normal" device-position="back" frame-size="medium"></camera>
+</view>
