@@ -23,7 +23,6 @@ Page({
               wx.onGyroscopeChange((result) => {
                 cnt+=1
                 fs = cnt/(new Date().valueOf()-time)
-                console.log(fs)
               })
             }
         })
@@ -36,8 +35,8 @@ Page({
             this.eigenTest()
             const ctx = wx.createCameraContext()
             const listener = ctx.onCameraFrame((frame) => {
-                ch = frame.height
-                cw = frame.width
+                let ch = frame.height
+                let cw = frame.width
                 if(that.data.time === 0){
                     that.data.img_processor= new Module["ImgProc"](cw, ch, cw);
                     that.data.imgproc_HEAPU8 = that.HEAPU8();
