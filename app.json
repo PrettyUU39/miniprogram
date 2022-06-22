@@ -9,6 +9,7 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
   },
+  "workers": "workers",
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
